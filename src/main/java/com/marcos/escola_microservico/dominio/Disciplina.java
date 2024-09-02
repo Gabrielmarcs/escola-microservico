@@ -14,10 +14,11 @@ import lombok.*;
 public class Disciplina {
     @Id
     @GeneratedValue(strategy = GenerationType.UUID)
-    private long id;
+    private String id;
     private String nome;
     private String descricao;
     private String data;
     private int qtdeAlunosMatriculados;
     private int qtdeMaxAlunos;
+
 }

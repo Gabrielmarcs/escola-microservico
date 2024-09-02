@@ -12,13 +12,13 @@ import lombok.*;
 @EqualsAndHashCode(of = "id")
 
 public class Inscricao {
-    @Id
-    GeneratedValue(strategy = GenerationType.IDENTITY)
-    private long id;
+	@Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    private Long id;
 
-    @ManyToMany
+    @ManyToOne
     private Disciplina disciplina;
 
-    private String emailAluno;
     private String nomeAluno;
+    private String emailAluno;
 }
