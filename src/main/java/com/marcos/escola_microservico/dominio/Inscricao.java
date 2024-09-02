@@ -21,4 +21,10 @@ public class Inscricao {
 
     private String nomeAluno;
     private String emailAluno;
+
+    public Inscricao(Disciplina disciplina, String nomeAluno, String emailAluno){
+        this.disciplina = disciplina;
+        this.nomeAluno = nomeAluno;
+        this.emailAluno = emailAluno;
+    }
 }

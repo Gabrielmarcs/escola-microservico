@@ -1,5 +1,7 @@
 package com.marcos.escola_microservico.dominio;
 
+import com.marcos.escola_microservico.modelo.DisciplinaModelo;
+
 import jakarta.persistence.*;
 import lombok.*;
 
@@ -20,5 +22,13 @@ public class Disciplina {
     private String data;
     private int qtdeAlunosMatriculados;
     private int qtdeMaxAlunos;
+
+    public Disciplina(DisciplinaModelo disciplinaModelo){
+        this.nome = disciplinaModelo.nome();
+        this.descricao = disciplinaModelo.descricao();
+        this.data = disciplinaModelo.data();
+        this.qtdeAlunosMatriculados = disciplinaModelo.qtdeAlunosMatriculados();
+        this.qtdeMaxAlunos = disciplinaModelo.maxAlunos();
+    }
 
 }
