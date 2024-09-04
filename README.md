@@ -1,6 +1,10 @@
 # Microserviço de Disciplinas e Envio de E-mails
 Este projeto é uma aplicação de microserviços desenvolvida com Spring Boot. O sistema permite o gerenciamento de disciplinas e inscrições em um ambiente escolar, além de enviar notificações por e-mail para os usuários.
 
+## Diagrama:
+
+![Diagrama da Arquitetura do Projeto](docs/diagrama.png)
+
 ## Tecnologias Utilizadas
 ![Java](https://img.shields.io/badge/java-%23ED8B00.svg?style=for-the-badge&logo=openjdk&logoColor=white)
 ![Spring](https://img.shields.io/badge/spring-%236DB33F.svg?style=for-the-badge&logo=spring&logoColor=white)
